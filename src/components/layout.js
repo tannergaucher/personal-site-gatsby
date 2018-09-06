@@ -1,11 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import { Container } from 'rebass'
-import { injectGlobal } from 'styled-components'
-
-import Header from './Header'
-import Footer from './Footer'
+import { injectGlobal, styled } from 'styled-components'
 
 injectGlobal`
   * { box-sizing: border-box; }
@@ -28,11 +24,10 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <Container>
-        {/* <Header /> */}
-        <Container>{children}</Container>
+      <div>
+        <div>{children}</div>
         {/* <Footer /> */}
-      </Container>
+      </div>
     )}
   />
 )

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
-import { Container, Lead } from 'rebass'
+import { Container } from 'rebass'
 import { injectGlobal } from 'styled-components'
 
 import Header from './Header'
@@ -11,7 +11,6 @@ injectGlobal`
   * { box-sizing: border-box; }
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 html {
-  /* font-family: 'Roboto Mono', monospace; */
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
 }
 body { margin: 0; }
@@ -30,9 +29,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <Container>
-        <Header />
+        {/* <Header /> */}
         <Container>{children}</Container>
-        <Footer />
+        {/* <Footer /> */}
       </Container>
     )}
   />

@@ -1,16 +1,21 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import { Container, Heading, Text, Caps } from 'rebass'
+import Header from '../components/Header'
 
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
-    <Layout>
-      <div>
-        <h1>{post.frontmatter.title}</h1>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-      </div>
-    </Layout>
+    <>
+      <Header />
+      <Container maxWidth="700px">
+        <Heading mt={6}>{post.frontmatter.title}</Heading>
+        <Caps mt={2}>{post.frontmatter.date}</Caps>
+        <Text mt={4}>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        </Text>
+      </Container>
+    </>
   )
 }
 
@@ -20,6 +25,7 @@ export const query = graphql`
       html
       frontmatter {
         title
+        date
       }
     }
   }

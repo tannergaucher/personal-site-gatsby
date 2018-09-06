@@ -16,11 +16,10 @@ const Header = ({ data }) => (
     render={data => (
       <Toolbar
         bg="#fafafa"
-        color="gray"
-        flexDirection="column"
-        alignItems="flexStart"
+        color="white"
+        alignItems="center"
         pt={4}
-        mt={4}
+        justifyContent="flex-start"
       >
         <Lead>{data.site.siteMetadata.title}</Lead>
       </Toolbar>

@@ -1,9 +1,7 @@
 ---
-title: portfolio
+title: Portfolio
 date: '2018-08-30'
 ---
-
-# Portfolio Page
 
 Don't make a portfolio of static pictures pointing to other posts.
 

@@ -5,7 +5,6 @@ import { injectGlobal, styled } from 'styled-components'
 
 injectGlobal`
   * { box-sizing: border-box; }
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
 html {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif
 }

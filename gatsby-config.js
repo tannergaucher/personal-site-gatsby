@@ -8,6 +8,7 @@ module.exports = {
     `gatsby-remark-copy-linked-files`,
     `gatsby-transformer-sharp`,
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-remark-images`,
       options: {

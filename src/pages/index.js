@@ -18,6 +18,8 @@ import Layout from '../components/layout'
 
 // Page level style-sheet move to seperate styles folder
 const StyledIndex = styled.div`
+  background: #fafafa;
+
   a {
     color: black;
     text-decoration: none;

@@ -6,6 +6,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^0.15.0",
     "@mdx-js/tag": "^0.15.0",
+    "babel-plugin-styled-components": "^1.6.4",
     "gatsby": "next",
     "gatsby-image": "^1.0.55",
     "gatsby-mdx": "^0.1.2",
@@ -14,6 +15,7 @@
     "gatsby-plugin-offline": "next",
     "gatsby-plugin-react-helmet": "next",
     "gatsby-plugin-sharp": "^1.6.48",
+    "gatsby-plugin-styled-components": "next",
     "gatsby-remark-copy-linked-files": "^1.5.37",
     "gatsby-remark-images": "^1.5.67",
     "gatsby-source-filesystem": "^1.5.39",

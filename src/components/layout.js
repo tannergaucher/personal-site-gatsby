@@ -3,6 +3,9 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 import { injectGlobal, styled } from 'styled-components'
 
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+
 injectGlobal`
   * { box-sizing: border-box; }
 html {
@@ -24,8 +27,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <div>
+        {/* <Header /> */}
         <div>{children}</div>
-        {/* <Footer /> */}
+        <Footer />
       </div>
     )}
   />

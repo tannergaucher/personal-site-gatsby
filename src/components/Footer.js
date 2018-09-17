@@ -22,7 +22,7 @@ const Footer = ({ data }) => (
         pt={4}
         mb={4}
       >
-        <Lead>{data.site.siteMetadata.title}</Lead>
+        {/* <Lead>{data.site.siteMetadata.title}</Lead> */}
       </Toolbar>
     )}
   />

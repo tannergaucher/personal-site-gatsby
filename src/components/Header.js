@@ -1,6 +1,9 @@
 import React from 'react'
 import { StaticQuery } from 'gatsby'
-import { Toolbar, Lead } from 'rebass'
+import { Toolbar as toolbar, Lead } from 'rebass'
+import styled from 'styled-components'
+
+const StyledHeader = styled.div``
 
 const Header = ({ data }) => (
   <StaticQuery
@@ -14,15 +17,9 @@ const Header = ({ data }) => (
       }
     `}
     render={data => (
-      <Toolbar
-        bg="#fafafa"
-        color="white"
-        alignItems="center"
-        pt={4}
-        justifyContent="flex-start"
-      >
-        <Lead>{data.site.siteMetadata.title}</Lead>
-      </Toolbar>
+      <StyledHeader>
+        <h1>{data.site.siteMetadata.title}</h1>
+      </StyledHeader>
     )}
   />
 )
